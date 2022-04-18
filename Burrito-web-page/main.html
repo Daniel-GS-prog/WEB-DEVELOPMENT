@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Juan's Mexican Street Food</title>
+
+  </head>
+
+  <body>
+
+    <!--  General container-->
+    <div class="container">
+
+      <!-- Header -->
+      <div class="header">
+        <p2>Juan’s Mexican Street Food</p2>
+        <br>
+        <br>
+        <p3>Best Burrito in Town!</p3>
+      </div>
+
+      <!-- Log in div upper right -->
+      <div class="login">
+
+        <!--  Log in form-->
+        <table class="table">
+          <form>
+
+            <tr>
+              <td class="td"><label for="usrname">Username: </label></td>
+              <td class="td"><input type="text" id="usrname" name="usrname" required></td>
+            </tr>
+
+            <tr>
+              <td class="td"><label for="">Password: </label></td>
+              <td class="td"><input type="Password" id="psw"  name="psw" required></td>
+            </tr>
+
+            <tr>
+              <td class="td"></td>
+              <td class="td"><button type="button" name="button"
+                onclick="verifyPassword()">Log in</button> </td>
+            </tr>
+
+          </form>
+        </table>
+      </div>
+
+      <!-- Left div - Pictures and reviews -->
+      <div class="content">
+        <table class="tableContent">
+
+          <tr>
+            <td>
+              <p>
+              BREATHLESS AND BRILLIANTLY
+              <br>
+              ORIGINAL
+              <br>
+              <p1>Love Food</p1>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+              DAZZLINGLY IMAGINATIVE
+              <br>
+              <p1>irish Times</p1>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                ONLY ONE MENU...BUT WHAT A MENU!!
+                <br>
+              <p1>Foodies on the hunt</p1>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Table for images -->
+        <table class="tableContent">
+
+          <tr position:center;>
+            <td><img src="burrito1.png", height="200"></td>
+            <td><img src="burrito2.jpeg", height="200"></td>
+            <td><img src="burrito3.jpeg", height="200"></td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <!-- Div for flag - Right-middle section -->
+      <div class="flag"><img src="burrito4.jpeg" alt="", style="margin-top:5%;"> </div>
+
+      <!-- Div for purchasing menu -->
+      <div class="burrito">
+
+        <table class="table">
+
+          <form class="" action="index.html" method="post">
+
+            <!-- Size of choice -->
+            <!-- Displaying health & saety concerns for supersize option -->
+            <tr>
+              <td><label for="">Size</label></td>
+              <td>
+                <select class="" name="Size" id="size" onchange="supersize(this)";>
+                  <option value="1" selected>Large</option>
+                  <option value="2">Extra-Large</option>
+                  <option value="3">Supersize</option>
+                </select>
+              </td>
+            </tr>
+
+            <!-- Amount of burritos -->
+            <tr>
+              <td><label for="">Amount</label></td>
+              <td><input type="number" name="amount" id="amount"></td>
+            </tr>
+
+            <!-- Enter a discount code -->
+            <tr>
+              <td><label for="">Discount: </label></td>
+              <td><input type="text" id="disc"></td>
+            </tr>
+
+            <!-- Display the discount applicable -->
+            <tr>
+              <td>Result:</td>
+              <td id="result"></td>
+            </tr>
+
+            <!-- triggers the calculation of amount to pay -->
+            <tr>
+              <td><button class="button" type="button" name="button" onclick="totalPrice()" >Total</button> </td>
+              <td id="order"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td id="total"></td>
+            </tr>
+
+          </form>
+        </table>
+      </div>
+
+      <!-- Footer div -->
+      <div class="footer">
+        <br>
+        Copyright © Juan's Mexican Street Food
+      </div>
+
+  </div>
+
+  </body>
+</html>

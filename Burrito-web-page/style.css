@@ -1,0 +1,136 @@
+
+    /* Formatting background */
+    body {
+      margin:0;
+    }
+
+    /* Formatting General container */
+    .container {
+
+      width: 100vw;
+      height: 100vh;
+
+      /* Visibility */
+      font-family : 'Quicksand', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+
+      /* Grid definition*/
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px repeat(2,1fr) 80px;
+
+      box-sizing: border-box;
+    }
+
+    /* Format for all divs inside general container */
+    .container div{
+      padding: 10px;
+    }
+
+    /* Header div */
+    .header{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align:center;
+      top: 50%;
+      bottom:50%;
+    }
+    /* Log in Div */
+    .login{
+      grid-column-start: 3;
+      grid-column-end: 4;
+      font-size: 17px;
+      color: white;
+    }
+
+    /* Content div (Left) */
+    .content{
+      background-color: #8e9189;
+      grid-row-start:2;
+      grid-row-end:4;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    /* Flag div (right) */
+    .flag{
+      grid-row-start:2;
+      grid-row-end:3;
+      grid-column-start: 3;
+      grid-column-end: 4;
+
+    }
+
+    /* Burrito div (right-bottom) */
+    .burrito{
+      grid-row-start:3;
+      grid-row-end:4;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      font-size: 17px;
+    }
+
+    /* Footer div */
+    .footer{
+      grid-row-start:4;
+      grid-row-end:5;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      text-align: center;
+    }
+
+    /* General table configuration */
+    .table{
+      width: 90%;
+      height: 90%;
+      text-align: center;
+
+    }
+
+    /* table in Div Content (Left - Reviews and photos) */
+    .tableContent{
+      height: 50%;
+      position: center;
+      text-align: center;
+      margin: auto;
+      text-align: center;
+      overflow: auto;
+    }
+
+    /* background-color */
+    .header, .footer, .login {
+      background-color: #404242;
+    }
+    .burrito, .flag{
+      background-color: #bebdbd;
+    }
+
+    /*  Generla image format*/
+    img {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: auto;
+      padding-bottom: 1px;
+    }
+
+    /*  Three paragraphs Formatting */
+    p1{
+      font-family: cursive;
+    }
+    p2{
+      font-family: "Lucida Console";
+      color: white;
+      font-size: 30px;
+    }
+    p3{
+      font-family: "Times New Roman";
+    }
+
+    .button{
+      width:50%;
+      height: 60%;
+      font-size: 15px;
+    }
+    /* End */
