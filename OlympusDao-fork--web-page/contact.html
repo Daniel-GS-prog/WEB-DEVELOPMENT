@@ -1,0 +1,129 @@
+<!-- National College of Ireland
+Module: Web design and client scripting
+Author:
+Daniel Gonzalez, student number: 21111383
+Erik Raúl Vargas Bocanegra, student number: 21131660 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Dashboard</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CA_3.css">
+    <link rel="stylesheet" type="text/css" href="dashboard-stake-contact.css">
+    <link rel="icon" href="pillar-logo.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="chart.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  </head>
+
+  <body>
+
+<!-- Div containing everything -->
+    <div class="container">
+
+<!-- Div header -->
+      <div class="header">
+
+        <!-- Div for buttons in top-right -->
+        <div class="buttons">
+          <button class="button" type="button" name="button"
+          onclick=" window.open('https://app.uniswap.org/#/swap', '_blank'); return false;">PILLAR</button>&nbsp;&nbsp;&nbsp;
+          <button class="button "type="button" name="button"
+            onclick="window.location.href='stake-format.html';">Stake</button>
+        </div>
+
+      </div>
+<!-- End of Div header -->
+
+<!-- Div for menu on the left -->
+      <div class="menu">
+        <h2 class="h1">Atlantis DAO</h2>
+
+          <hr class="hr">
+
+          <!-- Table with link to other pages -->
+          <div id="mainMenu">
+
+          <ul>
+            <li><a href="index.html">Dash</a></li>
+            <li><a href="stake-format.html">Stake</a></li>
+            <li><a href="bridge-format.html">Bridge</a></li>
+            <li><a href="contact.html">Reach Out</a></li>
+            <li><a href="documentation-format.html">Docs</a></li>
+            <li><a href="https://terraswap.io/" target="_blank">TerraSwap</a></li>
+            <li><a href="" onclick="notAvailable()">3,3 Together</a></li>
+            <li><a href="" onclick="notAvailable()">Forum</a></li>
+            <li><a href="" onclick="notAvailable()">Governance</a></li>
+
+          </ul>
+
+          </div>
+
+          <hr class="hr">
+
+          <div class="bond">
+
+          <label for="bond">Bond</label>
+          <td><marquee direction="left" behavior="scroll">Bond Discount: wETH 25%, UST 12%, LUNA 32%</marquee></td>
+          </div>
+
+          <!-- Table with swaps and 3,3 investment strategy -->
+
+          <hr class="hr">
+
+          <!-- Table with project involvement -->
+
+
+      </div>
+<!-- End of menu Div -->
+<!-- Div Content -->
+      <div class="content"></div>
+<div class="bridge">
+  <form  action="mailto:atlantis@dao.com" method="post" target="_blank" enctype="text/plain">
+    <table class="contact-table">
+      <tr class="intouch">
+        <td >Get in touch!</td>
+      </tr>
+    </table>
+    <table class="contact-table">
+      <tr>
+        <td class="t1"><label for="userName">Enter name or user:</label></td>
+        <td><input class="t2" type="text" name="userName" placeholder="" size="40" required></td>
+      </tr>
+      <tr>
+        <td class="t1"><label for="email">Enter your E-mail:</label></td>
+        <td><input class="t2" type="email" id="emailito" name="email" placeholder="" size="40" onchange="validateEmail()" required></td>
+      </tr>
+      <tr>
+        <td class="t1"><label for="phone">Your contact number:</label></td>
+        <td><input class="t2" type="text" name="phone" placeholder="" size="40"></td>
+      </tr>
+    </table>
+    <table class="contact-table">
+
+      <tr>
+        <td colspan="2"><textarea name="commets" rows="8" cols="60" placeholder="Please enter your comments here:"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input class="t2" type="submit" style="color:black;"name="validate" value="Submit your form"></td>
+      </tr>
+  </table>
+</form>
+
+</div>
+
+
+<!-- Div footer -->
+      <div class="footer">All rights reseverd&copy</div>
+<!-- End of div footer -->
+
+<!-- End of div containing everything -->
+    </div>
+
+  </body>
+</html>

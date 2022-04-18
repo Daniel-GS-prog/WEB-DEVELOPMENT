@@ -1,0 +1,298 @@
+/*
+National College of Ireland
+Module: Web design and client scripting
+Author:
+Daniel Gonzalez, student number: 21111383
+
+*/
+
+html, body {
+  margin:0;
+}
+body{
+    overflow: hidden;
+}
+/* Formatting General container */
+.container {
+
+  width: 100vw;
+  height: 100vh;
+
+  /* Visibility */
+  font-family : 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+
+  /* Grid definition*/
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 100px repeat(10,1fr) 80px;
+
+}
+
+/* Format for all divs inside general container */
+.container div{
+
+  padding: 10px;
+  color: #d9dad7;
+  position: center;
+
+}
+
+/* Group color */
+.header, .content, .footer, .optionbutton, .documentation{
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+
+.dash-table, .dash-graph, .menu, .interface, .bridge, .title, .button{
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+
+.interface, .bridge, .dash-table, .dash-graph, .hr, .button{
+  border-radius: 15px;
+}
+/* ----- General format for all pages ----- */
+
+/* Header */
+.header{
+  grid-column-start: 3;
+  grid-column-end: 11;
+  top: 50%;
+  bottom:50%;
+}
+
+/* Navigation menu */
+.menu{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 13;
+
+}
+
+/* Footer */
+.footer{
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 12;
+  grid-row-end: 13;
+  text-align: center;
+}
+
+/* Content */
+.content{
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 12;
+}
+
+/* ----- End General format for all pages ----- */
+
+
+
+/* ----- Brige page ---- */
+.bridge{
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 10;
+}
+/* ----- End Brige page ---- */
+
+
+/* ----- Documentation page ---- */
+.documentation{
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  max-height: 100vh;
+  overflow: scroll;
+}
+/* ----- End Documentation page ---- */
+
+
+/*  Generla image format*/
+img {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  position: center;
+
+}
+
+/* General format for tables */
+.table{
+  position: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-top:1%;
+  width: 90%;
+  height: 15%;
+}
+
+/* Table for menu in all pages */
+.table-menu{
+  color:#d9dad7;
+  font-size: 16px;
+  position: center;
+  padding-left: 10%;
+  width: 90%;
+  height: 15%;
+}
+
+/* Title */
+.h1{
+  text-align: center;
+  padding-top:10%;
+}
+
+/* Div for buttons on the top-right */
+.buttons{
+  position: absolute;
+  right: 10%;
+  top: 2.5%;
+}
+.button:hover{
+  color:#737575;
+  background: #Eceeee;
+}
+
+/* Buttons format in top-right */
+.button{
+  border: none;
+  color:#d9dad7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+/* Format for values in table */
+.trname{
+  font-size: 15px;
+  color: #d9dad7;
+}
+
+/* Format for values in table */
+.trvalue{
+  color: #fcfefe;
+  text-align: center;
+}
+input{
+  background: #Cbecf9;
+  color: #d9dad7;
+  border-bottom: #d9dad7;
+}
+
+#mainMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgba{0,0,0,0.1};
+}
+
+#mainMenu li a {
+  display: block;
+  color: #d9dad7;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+#mainMenu li a:hover {
+  color:#737575;
+  background: #Eceeee;
+}
+@media only screen and (max-width: 1260px) {
+  .bridge{
+    grid-column-start: 4;
+    grid-column-end: 10;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .h1, .bond{
+    text-align: center;
+    padding-top:0%;
+    margin: 0;
+    font-size: 16px;
+  }
+    #mainMenu li a{
+      font-size: 14px;
+  }
+  .trvalue, .trname{
+    font-size: 12px;
+  }
+  .bridge{
+    grid-column-start: 4;
+    grid-column-end: 10;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .header{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .menu{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  .content{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 13;
+  }
+  .footer{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 13;
+    grid-row-end: 13;
+  }
+  .h1, .bond{
+    text-align: center;
+    padding-top:0%;
+    margin: 0;
+    font-size: 12px;
+  }
+  #mainMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+  }
+  #mainMenu li {
+    float: left;
+  }
+  #mainMenu li a{
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+  }
+  .bridge{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 12;
+  }
+  .documentation{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 13;
+  }
+}
+/* End */

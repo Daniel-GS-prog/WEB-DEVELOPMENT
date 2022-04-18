@@ -1,0 +1,144 @@
+<!-- National College of Ireland
+Module: Web design and client scripting
+Author:
+Daniel Gonzalez, student number: 21111383
+Erik Raúl Vargas Bocanegra, student number: 21131660 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <title>Dashboard</title>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="CA_3.css">
+  <link rel="stylesheet" type="text/css" href="bridge-documentation.css">
+  <link rel="icon" href="pillar_logo.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+</head>
+  <body>
+
+    <div class="container">
+
+<!-- Div header -->
+      <div class="header">
+
+        <!-- Div for buttons in top-right -->
+        <div class="buttons">
+          <button class="button" type="button" name="button" target="_blank"
+          onclick=" window.open('https://app.uniswap.org/#/swap', '_blank'); return false;">PILLAR</button>&nbsp;&nbsp;&nbsp;
+          <button class="button "type="button" name="button"
+            onclick="window.location.href='stake-format.html';">Stake</button>
+        </div>
+
+      </div>
+<!-- End of Div header -->
+
+<!-- Div for menu on the left -->
+      <div class="menu">
+
+        <h2 class="h1">Atlantis DAO</h2>
+
+          <hr class="hr">
+
+          <!-- Table with link to other pages -->
+          <div id="mainMenu">
+
+          <ul>
+            <li><a href="index.html">Dash</a></li>
+            <li><a href="stake-format.html">Stake</a></li>
+            <li><a href="bridge-format.html">Bridge</a></li>
+            <li><a href="contact.html">Reach Out</a></li>
+            <li><a href="documentation-format.html">Docs</a></li>
+            <li><a href="https://terraswap.io/" target="_blank">TerraSwap</a></li>
+            <li><a href="" onclick="notAvailable()">3,3 Together</a></li>
+            <li><a href="" onclick="notAvailable()">Forum</a></li>
+            <li><a href="" onclick="notAvailable()">Governance</a></li>
+
+          </ul>
+
+          </div>
+
+          <hr class="hr">
+
+          <!-- table with Bond information display -->
+          <div class="bond">
+
+          <label for="bond">Bond</label>
+          <td><marquee direction="left" behavior="scroll">Bond Discount: wETH 25%, UST 12%, LUNA 32%</marquee></td>
+          </div>
+
+      </div>
+<!-- End of menu Div -->
+
+<!-- Div content -->
+      <div class="content"></div>
+
+<!--  Div bridge for interface -->
+      <div class="bridge">
+
+        <table class="table">
+          <tr>
+            <td>
+              <td style="font-size:45px;">Bridge</td>
+            <tr>
+        </table>
+
+        <!-- Option to connect wallet -->
+        <div class="wallet">
+          <label for="wallet">Connect Wallet</label>
+          <input type="checkbox" id="connect" onclick="connected()">
+        </div>
+
+        <table class="tablebridge">
+          <tr>
+            <td>
+              <label for="">From: </label>
+            </td>
+            <td>
+              <select id="from" class="" name="">
+                <option disabled hidden selected>Select Operator</option>
+                <option value="Ethereum">Ethereum</option>
+                <option value="Binancie Smart Chain">Binance Smart Chain</option>
+                <option value="Polygon">Polygon</option>
+                <option value="Fantom">Fantom</option>
+              </select>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <label for="">To: </label>
+            </td>
+            <td>
+              <select id="to" class="" name="">
+                <option disabled hidden selected>Select Operator</option>
+                <option value="Ethereum">Ethereum</option>
+                <option value="Binancie Smart Chain">Binance Smart Chain</option>
+                <option value="Polygon">Polygon</option>
+                <option value="Fantom">Fantom</option>
+              </select>
+            </td>
+
+          </tr>
+          <tr>
+            <td>Enter Amount: </td>
+            <td><input style="color:black;" type="number" name="" value="" min="1" placeholder="Type Quantity"></td>
+            <td><button type="button" class="button" name="Stake COIN" onclick="connectWallet_2()">Transfer COIN</button></td>
+          </tr>
+        </table>
+
+
+      </div>
+
+      <!-- Div footer -->
+            <div class="footer">All rights reseverd&copy</div>
+      <!-- End of div footer -->
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,137 @@
+/*
+Natinal College of Ireland
+Module: Web design and client scripting
+Author:
+Daniel Gonzalez, student number: 21111383
+
+*/
+
+/* ----- dashboard page ---- */
+/* Dashboard table */
+.dash-table{
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 5;
+
+}
+
+/* Graph for dashboard page */
+.dash-graph{
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+/* ----- End dashboard page ---- */
+
+
+/* ----- Stake page ---- */
+/* Interface for stake page */
+.interface{
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 11;
+}
+
+.staketrtable{
+  color:#d9dad7;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.staketrvalue{
+  color:#d9dad7;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.option{
+  width: 70%;
+  height: 5%;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  font-size: 20px;
+}
+
+.contact-table{
+  margin: auto;
+  padding-top: 3%;
+}
+
+.intouch{
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.t2{
+  background-color: #d9dad7;
+  color: black;
+}
+@media only screen and (max-width: 960px) {
+  .dash-graph{
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 11;
+  }
+  .staketrtable{
+    color:#d9dad7;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .staketrvalue{
+    color:#d9dad7;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .option{
+    width: 70%;
+    height: 5%;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    font-size: 12px;
+  }
+  .wallet{
+    width: 70%;
+    height: 5%;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .dash-table{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+  .dash-graph{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 9;
+    grid-row-end: 13;
+  }
+    .interface{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 13;
+  }
+  .staketrtable{
+    font-size: 12px;
+  }
+  .staketrvalue, .singlestake{
+    font-size: 15px;
+  }
+  .option{
+    font-size: 10px;
+  }
+}
+/* ----- End of Stake page ---- */

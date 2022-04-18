@@ -1,0 +1,165 @@
+<!-- National College of Ireland
+Module: Web design and client scripting
+Author:
+Daniel Gonzalez, student number: 21111383
+Erik Raúl Vargas Bocanegra, student number: 21131660 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <title>Stake</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="CA_3.css">
+  <link rel="stylesheet" type="text/css" href="dashboard-stake-contact.css">
+  <link rel="icon" href="pillar_logo.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+
+
+</head>
+
+  <body>
+
+<!-- Div containing everything -->
+  <div class="container">
+
+<!-- Div header -->
+    <div class="header">
+
+      <!-- Div for buttons in top-right -->
+      <div class="buttons">
+        <button class="button" type="button" name="button" target="_blank"
+        onclick=" window.open('https://app.uniswap.org/#/swap', '_blank'); return false;">PILLAR</button>&nbsp;&nbsp;&nbsp;
+        <button class="button "type="button" name="button"
+          onclick="window.location.href='bridge-format.html';">Bridge</button>
+      </div>
+
+    </div>
+<!-- End of Div header -->
+
+
+<!-- Div for menu on the left -->
+    <div class="menu">
+      <h2 class="h1">Atlantis DAO</h2>
+
+        <hr class="hr">
+
+        <!-- Table with link to other pages -->
+        <div id="mainMenu">
+
+        <ul>
+          <li><a href="index.html">Dash</a></li>
+          <li><a href="stake-format.html">Stake</a></li>
+          <li><a href="bridge-format.html">Bridge</a></li>
+          <li><a href="contact.html">Reach Out</a></li>
+          <li><a href="documentation-format.html">Docs</a></li>
+          <li><a href="https://terraswap.io/" target="_blank">TerraSwap</a></li>
+          <li><a href="" onclick="notAvailable()">3,3 Together</a></li>
+          <li><a href="" onclick="notAvailable()">Forum</a></li>
+          <li><a href="" onclick="notAvailable()">Governance</a></li>
+
+        </ul>
+
+        </div>
+
+        <hr class="hr">
+
+        <!-- table with Bond information display -->
+        <div class="bond">
+
+        <label for="bond">Bond</label>
+        <td><marquee direction="left" behavior="scroll">Bond Discount: wETH 25%, UST 12%, LUNA 32%</marquee></td>
+        </div>
+
+    </div>
+<!-- End of menu Div -->
+
+<!-- Div Content -->
+      <div class="content"></div>
+
+      <!-- Div user interface -->
+      <div class="interface">
+
+        <!-- DIv with project's data -->
+        <div class="singlestake">
+          <h2>Single Stake (3,3)</h2>
+          <h6>"2 hours, 10 mins"</h6>
+        </div>
+
+        <table class="table">
+          <tr class="staketrtable">
+            <td>APY</td>
+            <td>Total Value deposited</td>
+            <td>Current Index</td>
+          </tr>
+
+          <tr class="staketrvalue">
+            <td>650,345.54%</td>
+            <td>1,396.002</td>
+            <td>1.08</td>
+          </tr>
+
+        </table>
+
+        <!--  Table with user interface-->
+        <table class="option">
+          <tr>
+            <td colspan="3"><label for="wallet">Connect Wallet</label>
+            <input type="checkbox" id="connect" onclick="connected()">
+            </td>
+          </tr>
+        </table>
+
+<table class="option">
+  <tr>
+    <td>
+      <label for="stake">Stake: </label>
+      <input type="radio" name="stake" value="Stake" id="stake">
+    </td>
+    <td>
+      <label for="unstake">Unstake: </label>
+      <input type="radio" name="stake" value="Unstake" id="unstake">
+    </td>
+  </tr>
+</table>
+
+<table class="option">
+  <tr>
+    <td>
+      <input style="color:black; "type="number" id="stakeQty"name="stakeQty" placeholder="Type Quantity" min="1">
+      <button type="button" class="button" name="Stake COIN" onclick="connectWallet_1()">Stake PILLAR</button>
+    </td>
+  </tr>
+</table>
+
+<table class="option">
+  <tr>
+    <td>
+      <label for="unsBalance">Unstaked Balance</label>
+      <input style="color:black;" type="text" id="unstaked" value="" readonly>PILLAR
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="sBalance">&nbsp&nbsp&nbsp&nbspStaked Balance</label>
+    <input style="color:black;" type="text" id="staked" value="" readonly>PILLAR</td>
+  </tr>
+
+        </table>
+
+      </div>
+
+
+      <!-- Div footer -->
+            <div class="footer">All rights reseverd&copy</div>
+      <!-- End of div footer -->
+
+    </div>
+
+  </body>
+</html>

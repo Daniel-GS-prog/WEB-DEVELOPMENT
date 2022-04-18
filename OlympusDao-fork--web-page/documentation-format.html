@@ -1,0 +1,132 @@
+<!-- National College of Ireland
+Module: Web design and client scripting
+Author:
+Daniel Gonzalez, student number: 21111383
+Erik Raúl Vargas Bocanegra, student number: 21131660 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <title>Documentation</title>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="CA_3.css">
+  <link rel="icon" href="pillar_logo.png">
+
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+</head>
+
+  <body>
+
+    <div class="container">
+
+  <!-- Div header -->
+      <div class="header">
+
+        <!-- Div for buttons in top-right -->
+        <div class="buttons">
+          <button class="button" type="button" name="button" target="_blank"
+          onclick=" window.open('https://app.uniswap.org/#/swap', '_blank'); return false;">PILLAR</button>&nbsp;&nbsp;&nbsp;
+          <button class="button "type="button" name="button"
+            onclick="window.location.href='stake-format.html';">Stake</button>
+        </div>
+
+      </div>
+  <!-- End of Div header -->
+
+  <!-- Div for menu on the left -->
+      <div class="menu">
+        <h2 class="h1">Atlantis DAO</h2>
+
+          <hr class="hr">
+
+          <!-- Table with link to other pages -->
+          <div id="mainMenu">
+
+          <ul>
+            <li><a href="index.html">Dash</a></li>
+            <li><a href="stake-format.html">Stake</a></li>
+            <li><a href="bridge-format.html">Bridge</a></li>
+            <li><a href="contact.html">Reach Out</a></li>
+            <li><a href="documentation-format.html">Docs</a></li>
+            <li><a href="https://terraswap.io/" target="_blank">TerraSwap</a></li>
+            <li><a href="" onclick="notAvailable()">3,3 Together</a></li>
+            <li><a href="" onclick="notAvailable()">Forum</a></li>
+            <li><a href="" onclick="notAvailable()">Governance</a></li>
+
+          </ul>
+
+          </div>
+
+          <hr class="hr">
+
+          <!-- table with Bond information display -->
+          <div class="bond">
+
+          <label for="bond">Bond</label>
+          <td><marquee direction="left" behavior="scroll">Bond Discount: wETH 25%, UST 12%, LUNA 32%</marquee></td>
+          </div>
+      </div>
+  <!-- End of menu Div -->
+
+      <div class="documentation">
+
+            <h1>AtlantisDAO</h1>
+            <h3>The Reserve Currency for Terra</h3>
+            <hr>
+
+        <h1>What is Atlantis?</h1>
+        <p >
+
+        Atlantis is the first decantralized reserve currency protocil available
+        on the <b>Terra Network</b> based on the <b>PILLAR</b> token. Each <b>PILLAR</b>
+        token is backed by a basket of assets (e.g. TerraUST, LUNA, TerraKRW) in the Atlantis
+        treasury, giving it an intrinsic value it cannot fall below.
+        </p>
+        <hr class="hr">
+
+        <h1>What is the point of Atlantis?</h1>
+        <p>
+          Our goal is to build a policy-controlled currency system, native to the <b>Terra</b>
+          network. WE believe this system can be used to optimize stability so that <b>PILLAR</b>
+          can function as a global unit-of-account and medium-of-exchange currency.
+          The goal is to achieve price flatness for a representative basket of goods without
+          the use of fiat Currency and in doing so promote the freedon the crptocurrency industry
+          needs to free itself from the traditional financial system.
+        </p>
+        <hr>
+
+        <h1>How do I participate in Atlantis?</h1>
+        <p>
+        There are two main strategies for market participants: <b>staking</b> and <b>bonding</b>.
+        Stakes stake their <b>PILLAR</b> token in return for more <b>PILLAR</b> tokens, while
+        minters provide LP tokens through the bonding mechanism in exchange for discounted
+        <b>PILLAR</b> tokens.
+        </p>
+        <hr>
+
+        <h1>Who created Atlantis?</h1>
+        <p>
+        Atlantis, like Wonderland on Avalanche network, Spartacus on Phanton, etc., is a fork
+        of <b>OlympusDAO</b>. Only that our software is not just a deployment but a whole rewrite
+        which allowed us to make several improvements based not only on the experience provided
+        by the OlympusDAO performance but on the Terra specific features, such as speed,
+        scalacility, gas fees, etc.
+        </p>
+
+      </div>
+
+      <!-- Div footer -->
+            <div class="footer">All rights reseverd&copy</div>
+      <!-- End of div footer -->
+
+    </div>
+
+  </body>
+</html>
